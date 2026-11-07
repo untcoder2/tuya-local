@@ -87,14 +87,6 @@ entities:
       - id: 102
         type: boolean
         name: switch
-  - entity: switch
-    translation_key: beep
-    icon: "mdi:volume-high"
-    category: config
-    dps:
-      - id: 103
-        type: boolean
-        name: switch
   - entity: sensor
     translation_key: inlet_temperature
     class: temperature

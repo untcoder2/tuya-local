@@ -4,9 +4,11 @@
 > (product ID `rllylqfcd3lfe3s3`) via
 > `custom_components/tuya_local/devices/tion_breezer_4s.yaml`. The DPS
 > mapping was verified on hardware: speed 1–6 (dp108), power (dp1),
-> heater (dp101), backlight (dp102), beep (dp103), quiet mode (dp106),
+> heater (dp101), backlight (dp102), quiet mode (dp106),
 > target temperature (dp109), airflow Inflow/Recirc (dp112), inlet (dp9)
-> and outlet (dp10) temperatures. Upstream tuya-local declined TION
+> and outlet (dp10) temperatures. **dp103 is intentionally not exposed:
+> writing to it powers the device off within seconds** (it is not a
+> sound/beep switch). Upstream tuya-local declined TION
 > device support, so this fork carries the config instead. Install via
 > HACS as a custom repository, or copy the YAML file into your existing
 > `tuya_local` installation (`custom_components/tuya_local/devices/`).
