@@ -1,5 +1,16 @@
 ![logo](custom_components/tuya_local/brand/icon.svg) 
 
+> **Fork notice:** This fork adds support for the **TION Breezer 4S**
+> (product ID `rllylqfcd3lfe3s3`) via
+> `custom_components/tuya_local/devices/tion_breezer_4s.yaml`. The DPS
+> mapping was verified on hardware: speed 1–6 (dp108), power (dp1),
+> heater (dp101), backlight (dp102), beep (dp103), quiet mode (dp106),
+> target temperature (dp109), airflow Inflow/Recirc (dp112), inlet (dp9)
+> and outlet (dp10) temperatures. Upstream tuya-local declined TION
+> device support, so this fork carries the config instead. Install via
+> HACS as a custom repository, or copy the YAML file into your existing
+> `tuya_local` installation (`custom_components/tuya_local/devices/`).
+
 Please report any [issues](https://github.com/make-all/tuya-local/issues) and feel free to raise [pull requests](https://github.com/make-all/tuya-local/pulls).
 [Many others](https://github.com/make-all/tuya-local/blob/main/ACKNOWLEDGEMENTS.md) have contributed their help already.
 
